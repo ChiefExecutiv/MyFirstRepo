@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <title>Benjamin</title>
+</head>
+<body>
+    <div id="icons">W E L C O M E</div>
+    <h1>HI,<br> I'M <span data-value="BENJAMIN" id="MyName">BENJAMIN</span></h1>
+    <p id="First">I'm a learning computer programmer,<br>
+        with a lot of interest in computer software,machine learning and
+        artificial intelligence.
+    </p>
+    <div>
+        <p>My other interests:</p>
+        <div class="images">
+            <div class="screen">
+                <div class="screen-image">
+                    <h3>Big Cities</h3>
+                </div>
+                <div class="screen-overlay"></div>
+            </div>
+            
+            <div class="screen" id="Star-Container">
+                <div class="screen-image" id="Star">
+                    <h3>Star Gazing</h3>
+                </div>
+                <div class="screen-overlay"></div>
+            </div>
+
+            <div class="screen" id="Star-Container">
+                <div class="screen-image" id="Star2">
+                    <h3>And Space</h3>
+                </div>
+                <div class="screen-overlay"></div>
+            </div>
+            
+            
+            
+        </div>
+        <p>...and many other things</p>
+    </div>
+    <div>
+        <p>But for now,I mainly focus on frontEnd Web Development<br>
+           Which means I can design websites,give your business/Portfolio a popularity boost<br>
+           I can <span id="magic">add the magic</span> that will draw more attention from your customers 
+        </p>
+    </div>
+    <div id="card"></div>
+    <div id="Conclusion">
+        <p>...so if you're interested,reach out</p>
+        <!---<button id="btn">Reach Out</button><br> -->
+        <a href="benjaminkawuki0@gmail.com">benjaminkawuki0@gmail.com</a>
+    </div>
+    <script src="MyWebsite.js"></script>
+</body>
+<style>
+    body{
+        background:linear-gradient(240deg,#030309, #000000);
+        color: #e6f1ff;
+        display: grid;
+        place-items: center;
+        font-family: monospace;
+        border-left: 0.5px solid #2E2E2E;
+        border-right: 0.5px solid #2E2E2E;
+        margin-right: 50px;
+        overflow-x: hidden;
+        min-height: 100%;
+    }
+    h1{
+        font-size: 90px;
+    }
+    #MyName{
+        background-image: -webkit-linear-gradient(90deg, #e6f1ff, #FFF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-style: "Space Mono", monospace;
+        font-size: 200px;
+    }
+    p{
+        font-size: 1.0rem;
+        opacity: 0.9;
+        border-bottom: 0.5px solid #2E2E2E;
+        padding-bottom: 20px;
+        width: 100%;        
+    }
+    #First{
+        padding-left: 600px;
+    }
+    img{
+        width: 250px;
+        height: 200px;
+        border-radius: 8px;
+        aspect-ratio: 9/ 16;
+        border: 10px solid rgb(var(--primary-rgb)/80%);
+    }
+    @keyframes background-pan {
+        from {
+            background-position: 0% center;
+        }
+        to {
+            background-position: -200% center;
+        }
+    }
+
+    
+    #magic{
+        background-image: -webkit-linear-gradient(90deg, #64acff, #3bf0e4);
+        animation: background-pan 3s linear infinite;
+        background-size: 200%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 1;
+    }
+    button{
+        background: transparent;
+        border: 1px solid;
+        color:#fff;
+        padding: 20px;
+        border-radius: 2px;
+        width: 200px;
+        clip-path: polygon(0 30%, 30% 0, 100% 0, 100% 70%, 70% 100%, 0 100%);
+        overflow: hidden;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+        font-family: monospace;
+        font-size: 20px;
+        margin-left: 20px;
+        background-image: -webkit-linear-gradient(90deg, #64acff, #3bf0e4);
+        animation: background-pan 3s linear infinite;
+        background-size: 200%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    a:hover{
+
+    }
+    .images{
+        display: flex;
+        flex-grow: 5;
+
+    }
+    #Image1{
+        margin-right: 5px;
+    }
+    #Image2{
+        margin-right: 5px;
+    }
+    .screen{
+        width: 300px;
+        border :none;
+        aspect-ratio: 20/18;
+        border-radius: 0.8rem;
+        overflow: hidden;
+        position: relative;
+    }
+    h3{
+        display: grid;
+        place-items: center;
+        opacity: 1;
+        color:#ffffff;
+        text-shadow: #fff;
+        text-transform: uppercase;
+        font-family: 'Courier New', Courier, monospace;
+        z-index: 1;
+    }
+    .screen > .screen-image{
+        background-image: url("C:\\Users\\DELL\\Desktop\\Attic\\IMG_20230718_053052.jpg");
+        height: 100%;        
+        width: 100%;
+        background-size: 300%;
+        filter: sepia(10%) saturate(100%) brightness(100%) hue-rotate(0deg);
+        opacity: 0.7;
+        animation: pan-image 15s linear infinite;
+        position: absolute;
+    }
+    #Star{
+        background-image: url("C:\\Users\\DELL\\Desktop\\Attic\\Screenshot_2023-07-26-13-12-56~2.png");
+    }
+    #Star-Container{
+        margin-left: 8px;
+    }
+    #Star2{
+        background-image: url("C:\\Users\\DELL\\Desktop\\Attic\\Screenshot_2023-05-19-19-41-38.png");
+    }
+    @keyframes pan-image {
+        from {
+            background-position: 0% 0%;
+        }
+        to {
+            background-position: 100% 100%;
+        }
+    }
+    ::-webkit-scrollbar{
+        width: 2px;        
+    }
+    ::-webkit-scrollbar-thumb{
+        background: linear-gradient(transparent, #fff);
+        border-radius: 6px;
+    }
+
+</style>
